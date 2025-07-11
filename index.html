@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Skilltone AI</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKILLTONE AI</title>
+    <link rel="stylesheet" href="/styles/main.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>🎓 Skilltone AI</h1>
-        <p>Generate skill-based video content using AI in seconds!</p>
-        <input id="skillInput" type="text" placeholder="Enter a skill (e.g., Python, Drawing)">
-        <button onclick="generateVideo()">Generate</button>
-        <div id="output"></div>
-    </div>
-    <script src="app.js"></script>
+    <header>
+        <h1>SKILLTONE AI</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/create">Create</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Enter your skill</h2>
+            <input id="skillInput" type="text" placeholder="e.g. Python, Drawing">
+            <button onclick="generateVideo()">Generate Video</button>
+        </section>
+        <section id="videoSection"></section>
+    </main>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/chatbot.js"></script>
+    <script src="/scripts/stripe.js"></script>
+    <footer>
+        <p>© 2025 SKILLTONE AI</p>
+    </footer>
 </body>
 </html>
